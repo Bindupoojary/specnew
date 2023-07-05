@@ -1,0 +1,74 @@
+.container {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 377px) and (max-width: 2000px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+.crafting {
+  padding: 3.5rem 1.25rem;
+  box-sizing: border-box;
+}
+.crafting__item {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 377px) and (max-width: 2000px) {
+  .crafting__item {
+    flex-direction: row;
+  }
+  .crafting__item:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+}
+.crafting__item:first-child {
+  margin-bottom: 6rem;
+}
+@media screen and (min-width: 377px) and (max-width: 2000px) {
+  .crafting__item:first-child .crafting__item__content {
+    margin-right: 2.5rem;
+    margin-left: 0;
+  }
+}
+.crafting__item__img img {
+  width: 100%;
+}
+.crafting__item__content {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 377px) and (max-width: 2000px) {
+  .crafting__item__content {
+    margin-right: 2.5rem;
+    padding-left: 3%;
+    width: 120%;
+  }
+}
+.crafting__item__title {
+  margin-bottom: 1.25rem;
+  color: #001186;
+}
+.crafting__item__contact {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #001186;
+}
+.crafting__item__contact::before {
+  content: "";
+  height: 0.45rem;
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  background-color: #e3f307;
+}

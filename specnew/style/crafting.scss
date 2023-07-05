@@ -1,0 +1,88 @@
+@use './abstract/colors' as *;
+
+.container{
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    margin-bottom: 2.5rem;
+    @media screen and (min-width: 377px) and (max-width: 2000px) {
+    font-size: 1.4rem;}
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.crafting{
+    padding: 3.5rem 1.25rem;
+    box-sizing: border-box;
+
+    &__item{
+        display: flex;
+        flex-direction: column-reverse;
+
+        @media screen and (min-width: 377px) and (max-width: 2000px) {
+            flex-direction: row;
+
+            &:nth-child(2) {
+                flex-direction: row-reverse;
+            }
+
+        }
+
+        &:first-child {
+            margin-bottom: 6rem;
+
+
+        @media screen and (min-width: 377px) and (max-width: 2000px)   {
+            .crafting__item__content{
+                margin-right: 2.5rem;
+                margin-left: 0;
+            }
+
+        }
+        }
+
+        &__img img{
+            width: 100%;
+        }
+
+        &__content{
+            margin-top:  1rem;
+            @media screen and (min-width: 377px)and (max-width: 2000px)   {
+                margin-right: 2.5rem;
+                padding-left: 3%;
+                width: 120%;
+
+            }
+        }
+
+        &__title{
+            margin-bottom: 1.25rem;
+            color: $navy-blue;
+        }
+
+        &__contact{
+            margin-top: 15px;
+            font-weight: bold;
+            color: $navy-blue;
+        }
+
+        &__contact::before {
+            content: "";
+            height: 0.45rem;
+            width: 30px;
+            display: inline-block;
+
+            vertical-align: middle;
+            margin-right: 20px;
+            background-color: #e3f307;
+
+
+
+        }
+    }
+}

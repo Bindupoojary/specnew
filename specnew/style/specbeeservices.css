@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.service {
+  background-color: #0020f6;
+}
+.service__heading {
+  margin-top: 0;
+  font-size: 5rem;
+  padding-top: 5rem;
+  color: white;
+}
+.service__heading::before {
+  content: "";
+  height: 0.75rem;
+  width: 150px;
+  display: inline-block;
+  margin-bottom: 15px;
+  vertical-align: middle;
+  margin-right: 50px;
+  background-color: yellow;
+}
+.service__wrapper {
+  max-width: 65rem;
+  padding-top: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+.service__card {
+  width: 30%;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.service_image_wrapper {
+  background-image: url("https://www.specbee.com/themes/custom/specbee/assets/media/icons/polygon.svg");
+  background-repeat: no-repeat;
+  height: 15rem;
+  width: 15rem;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.service_image_wrapper img {
+  width: 6rem;
+}
+.service--link {
+  text-decoration: none;
+  color: white;
+}
+.service__title {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.service__desc {
+  margin-top: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.standing__title {
+  font-size: 7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+  font-weight: bold;
+  color: rgb(0, 32, 246);
+}
+.standing__title::before {
+  content: "";
+  height: 0.75rem;
+  width: 100px;
+  display: inline-block;
+  margin-bottom: 15px;
+  vertical-align: middle;
+  margin-right: 50px;
+  background-color: yellow;
+}
+.standing-out {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.standing-out__content-desc {
+  width: 290px;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0f0f0f;
+  font-size: 0.875rem;
+}
+.standing-out__content {
+  margin: 15px;
+  background-color: rgb(243, 242, 242);
+}
+.standing-out__content-img img {
+  width: 345px;
+  height: 250px;
+}
+.standing-out__content-title {
+  color: #001186;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 75%;
+  padding-left: 20px;
+  padding-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.emp-div {
+  background-color: #0020f6;
+  content: "";
+  height: 4px;
+  width: 70px;
+  margin-right: -20px;
+  position: relative;
+  left: 275px;
+  bottom: 10px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 321px) {
+  .service__wrapper {
+    max-width: 65rem;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin-left: 45px;
+  }
+  .service__heading {
+    margin-top: 0;
+    font-size: 2.5rem;
+    padding-top: 5rem;
+    color: white;
+    width: 80%;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .service__heading::before {
+    content: "";
+    display: none;
+  }
+  .service__title {
+    width: 80%;
+    width: 300px;
+    margin-left: -20px;
+  }
+  .service__desc {
+    padding-left: 40px;
+    width: 300px;
+    margin-left: -70px;
+  }
+}
+@media only screen and (min-width: 322px) and (max-width: 768px) {
+  .drupal-service__heading {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+  .drupal-service__heading::before {
+    content: "";
+    height: 0.75rem;
+    width: 50px;
+  }
+  .service__card {
+    width: 30%;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin: 65px;
+  }
+}/*# sourceMappingURL=specbeeservices.css.map */

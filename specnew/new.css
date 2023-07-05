@@ -1,0 +1,11 @@
+p{
+    background-color: aquamarine;
+}
+
+.content-item ~ p{
+    background-color: rgb(70, 219, 97);
+}
+
+.content + p{
+    background-color: brown;
+}
